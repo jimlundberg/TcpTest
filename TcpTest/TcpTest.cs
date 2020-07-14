@@ -79,7 +79,12 @@ namespace TcpTest
 
             // Check modeler status
             Connect("127.0.0.1", 3000, "status");
-            Console.ReadLine();
+
+            do
+            {
+                Console.ReadLine();
+            }
+            while (true);
         }
 
         static void Main(string[] args)
